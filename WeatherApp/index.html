@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App☀️</h1>
+      <div class="search_section">
+        <input id="city_name" placeholder="Enter your City name" />
+        <button id="search_button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <img src="./images/4102326_cloud_sun_sunny_weather_icon.png" class="display_img">
+      
+      <div class="result">
+        <p class="status"></p>
+        <p class="error"></p>
+        <p class="temperature"></p>
+        <p class="location"></p>
+      </div>
+
+      <footer class="footer">
+        @ Copyright &nbsp;amandollar &nbsp; <a href="https://github.com/amandollar" class="github-icon" target="_blank">
+            <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+        </i></a>
+    </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

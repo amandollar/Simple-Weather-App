@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgba(40, 72, 95, 0.365);
+}
+
+.container {
+  height: 90vh;
+  max-width: 280px;
+  box-shadow: 1px 2px 3px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  background: linear-gradient(135deg, #62979e, #4eea5e);
+  color:rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.search_section {
+  margin-top: 20px;
+}
+
+#city_name {
+  background-color: rgba(253, 253, 253, 0.943);
+  border: none;
+  border-radius: 8px;
+  padding: 3px;
+  outline: none;
+}
+
+#search_button {
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(247, 249, 249, 0.909);
+  padding: 5px;
+}
+
+#search_button:hover {
+  cursor: pointer;
+}
+
+
+.display_img{
+    height: 150px;
+    width: 150px;
+
+}
+
+.result{
+    font-size: 25px;
+
+}
+
+.temperature{
+    text-align: center;
+}
+
+.error{
+  text-align: center;
+}
+
+
+
+footer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 30px;
+  height: 40px;
+  padding: 10px;
+
+}
+
+
+
+
+.github-icon {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  animation: rotate 2s linear infinite;
+ 
+}
+
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
