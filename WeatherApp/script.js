@@ -26,11 +26,12 @@ document.addEventListener('DOMContentLoaded', function () {
         city.textContent = '';
 
         const key = "5305dd9eb69948648e6165117241508";
-        const url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${value}`;
+        const url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${value}`;
 
         axios.get(url)
             .then(response => {
-                
+
+                status.textContent = '';
                 const data = response.data;
                 const temp = data.current.temp_c;
                 const city_name = data.location.name;
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 city.textContent = city_name;
             })
             .catch(error => {
+                status.textContent = '';
                 failedMessage.textContent = "Enter your city name correctly!"
                 
             });
