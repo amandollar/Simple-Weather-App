@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('click', () => {
         value = input.value;
         getWeather(value);
+        status.textContent = "Loading..";
     });
 
     function getWeather(value) {
